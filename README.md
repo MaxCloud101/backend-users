@@ -20,8 +20,17 @@ deactivate
 pip install -r requirements.txt
 ```
 ## To configure database conection
-- Edit .env file and add your credentials
+- Create .env file and add your credentials
+```
+# App environment variables
+FLASK_ENV=development
+FLASK_APP=wsgi
 
+# Database environment variables
+DB_PASSWORD=password
+DB_USER=postgres
+DB_NAME=usersapp
+```
 ## To run Project
 - Set environment variables and run:
 ```
